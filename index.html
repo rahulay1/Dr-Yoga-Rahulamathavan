@@ -9,6 +9,25 @@
       content="Yoga Rahulamathavan, PhD — Institute for Digital Technologies — Loughborough University, UK"
     />
     <meta name="keywords" content="Yoga Rahulamathavan, cybersecurity, privacy, Responsible AI" />
+    <link rel="canonical" href="https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/" />
+
+    <!-- Social cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Yoga Rahulamathavan" />
+    <meta property="og:title" content="Yoga Rahulamathavan, PhD — Reader in Cybersecurity & Privacy" />
+    <meta
+      property="og:description"
+      content="Academic homepage — research, teaching, publications, and PhD supervision."
+    />
+    <meta property="og:url" content="https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/" />
+    <meta property="og:image" content="https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/img/rahul1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yoga Rahulamathavan, PhD — Reader in Cybersecurity & Privacy" />
+    <meta
+      name="twitter:description"
+      content="Academic homepage — research, teaching, publications, and PhD supervision."
+    />
+    <meta name="twitter:image" content="https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/img/rahul1.jpeg" />
 
     <style>
       :root {
@@ -34,6 +53,26 @@
         background: #f1f5f9;
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
           "Segoe UI Emoji";
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        padding: 8px 10px;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        transform: translateY(-150%);
+        transition: transform 120ms ease;
+        z-index: 9999;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+        outline: none;
       }
 
       a {
@@ -189,6 +228,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <div id="content" class="page">
       <header class="top">
         <div class="top__media">
@@ -243,7 +283,7 @@
 
       <p class="meta">Last updated: <span id="last-updated">—</span></p>
 
-      <main>
+      <main id="main" tabindex="-1">
         <section id="students">
           <h2>For Students</h2>
           <p>
@@ -460,9 +500,23 @@
             <li>Fellow of Higher Education Academy, 2018</li>
           </ul>
         </section>
+
+        <section id="privacy">
+          <h2>Privacy &amp; Cookies</h2>
+          <p>
+            This website may use third-party analytics (StatCounter) to understand basic traffic (for example, page
+            visits). StatCounter may set cookies and may process limited technical information such as IP address and
+            device/browser details.
+          </p>
+          <p>
+            If you prefer not to be tracked, you can block third-party cookies in your browser or use a privacy-focused
+            browser/extension. If you have any questions about data processing, please contact me by email.
+          </p>
+        </section>
       </main>
 
       <footer>
+        <p class="meta"><a href="#privacy">Privacy &amp; cookies</a></p>
         <a href="https://www.statcounter.com/" target="_blank" rel="noopener noreferrer">
           <span class="sr-only">StatCounter</span>
           <img
@@ -476,7 +530,7 @@
       </footer>
     </div>
 
-    <script>
+      <script>
       (() => {
         const images = ["./img/rahul1.jpeg", "./img/rahul2.jpeg"];
         const imageElement = document.getElementById("profile-photo");
@@ -496,6 +550,37 @@
           }
         }
       })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yoga Rahulamathavan",
+        "honorificSuffix": "PhD",
+        "jobTitle": "Reader in Cybersecurity & Privacy",
+        "url": "https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/",
+        "image": "https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/img/rahul1.jpeg",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Loughborough University"
+        },
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Institute for Digital Technologies"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "The Broadcast Centre Here East, Lesney Ave",
+          "addressLocality": "London",
+          "postalCode": "E20 3BS",
+          "addressCountry": "UK"
+        },
+        "sameAs": [
+          "https://scholar.google.co.uk/citations?user=53eQuxwAAAAJ&hl=en",
+          "https://dblp.org/search?q=Yoga%20Rahulamathavan"
+        ]
+      }
     </script>
   </body>
 </html>

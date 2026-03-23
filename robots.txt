@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rahulay1.github.io/Dr-Yoga-Rahulamathavan/sitemap.xml
